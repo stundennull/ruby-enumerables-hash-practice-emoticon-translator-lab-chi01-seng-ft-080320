@@ -18,7 +18,7 @@ end
 
 def get_english_meaning
   emoticons = load_library('lib/emoticons.yml')
-  result = emoticons["get_emoticon"][emoticon]
+  result = emoticons["get_meaning"][emoticon]
   if result
     result
  end

@@ -10,11 +10,12 @@ end
 
 def get_japanese_emoticon(file_path, emoticon)
   emoticon_lib = load_library(file_path)
-  japanese_emoticon = emoticon_lib.each |key, value|
+  emoticon = emoticon_lib.each |key, value| do
+    
 end
 
 
 def get_english_meaning(file_path, emoticon)
   emoticon_lib = load_library(file_path)
-  meaning = emoticon_lib[:english][emoticon]
+  
  end

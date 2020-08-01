@@ -8,7 +8,7 @@ result = emoticons.each_with_object ({}) do |(key, value), new_hash|
   end
 end
 
-def get_japanese_emoticon(file_path, emoticon)
+def get_japanese_emoticon('./lib/emoticons.yml', emoticon)
   emoticons = load_library('./lib/emoticons.yml')
   result = emoticons["get_emoticon"][emoticon]
   if result
@@ -16,7 +16,7 @@ def get_japanese_emoticon(file_path, emoticon)
 end
 end
 
-def get_english_meaning(file_path, emoticon)
+def get_english_meaning('./lib/emoticons.yml', emoticon)
   emoticons = load_library('./lib/emoticons.yml')
   result = emoticons["get_meaning"][emoticon]
   if result

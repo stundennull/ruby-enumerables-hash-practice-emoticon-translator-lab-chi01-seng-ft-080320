@@ -10,15 +10,13 @@ end
 
 def get_japanese_emoticon(file_path, emoticon)
   emoticons = load_library(file_path)
-  result = emoticons["get_emoticon"][emoticon]
-  if result
-    result
+  japanese_emoticon = emoticon_lib[:japanese] 
 end
 end
 
-def get_english_meaning('./lib/emoticons.yml', emoticon)
-  emoticons = load_library('./lib/emoticons.yml')
-  result = emoticons["get_meaning"][emoticon]
+def get_english_meaning(file_path, emoticon)
+  emoticons = load_library(file_path)
+  meaning = emoticon_lib[:english][emoticon]
   if result
     result
  end

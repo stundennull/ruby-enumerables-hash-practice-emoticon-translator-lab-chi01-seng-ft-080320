@@ -9,7 +9,7 @@ result = emoticons.each_with_object ({}) do |(key, value), new_hash|
 end
 
 def get_japanese_emoticon(file_path, emoticon)
-  emoticons = load_library(path)
+  emoticons = load_library(file_path)
   result = emoticons["get_emoticon"][emoticon]
   if result
     result
@@ -17,7 +17,7 @@ end
 end
 
 def get_english_meaning
-  emoticons = load_library(path)
+  emoticons = load_library(file_path)
   result = emoticons["get_emoticon"][emoticon]
   if result
     result

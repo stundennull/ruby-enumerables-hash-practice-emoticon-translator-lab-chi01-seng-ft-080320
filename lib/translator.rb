@@ -14,6 +14,9 @@ def get_japanese_emoticon(file_path, emoticon)
     value.each do |inner_key, faces|
       faces.each do |face|
         if face = emoticon
+          
+        end
+      end
     
 end
 

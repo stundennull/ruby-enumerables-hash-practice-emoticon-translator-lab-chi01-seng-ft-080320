@@ -11,7 +11,8 @@ end
 def get_japanese_emoticon(file_path, emoticon)
   emoticon_lib = load_library(file_path)
   emoticon = emoticon_lib.each do |key, value| 
-    value.each do 
+    value.each do |inner_key, faces|
+      if 
     
 end
 

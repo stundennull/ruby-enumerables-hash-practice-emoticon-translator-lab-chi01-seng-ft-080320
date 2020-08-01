@@ -15,9 +15,7 @@ end
 end
 
 def get_english_meaning(file_path, emoticon)
-  emoticons = load_library(file_path)
+  emoticon_lib = load_library(file_path)
   meaning = emoticon_lib[:english][emoticon]
-  if result
-    result
  end
 end
